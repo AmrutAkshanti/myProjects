@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style>
+        .output-text {
+            color: hotpink; /* Text color */
+            font-size: 18px; /* Font size */
+            font-family: Arial, sans-serif; /* Font family */
+        }
+    </style>
+</head>
+<body>
+
+	<script type="text/javascript">
+
+	document.write("<span class = 'output-text'>variables</span>");
+	var age = 30;
+	let name = "John";
+	const PI = 3.14;
+	document.write("<span class = 'output-text'>age of person: " + age + "</span><br>");
+    document.write("<span class = 'output-text'>name of person is: " + name + "</span><br>");
+    document.write("<span class = 'output-text'>value of PI is: " + PI + "</span><br>");
+    document.write("<br>");
+
+    document.write("<span class = 'output-text'>operations</span></span></span></span></span>");
+    document.write("<br>");
+    var sum = 5 + 3;
+    var diff = 5 - 3;
+    var mul = 5*3;
+	var isAdult = age >= 18;
+	var isValid = true && false;
+
+	document.write("<span class = 'output-text'><span class = 'output-text'>sum : "+sum+"</span></span></span></span><br>");
+	document.write("<span class = 'output-text'>diff : "+diff+"</span></span></span><br>");
+	document.write("<span class = 'output-text'>mul : "+mul+"</span></span><br>");
+	document.write("<span class = 'output-text'>is adult: "+isAdult+"</span><br>");
+	document.write("<span class = 'output-text'>is valid: "+isValid+"</span><br>");
+	document.write("<br>");
+
+
+	document.write("<span class = 'output-text'>conditional loops</span>");
+	document.write("<br>");
+	var hour = new Date().getHours();
+	if (hour < 12) {
+    document.write("<span class = 'output-text'>Good morning!</span>");
+	} else {
+    document.write("<span class = 'output-text'>Good afternoon!</span>");
+	}
+	document.write("<br>");
+
+
+	document.write("<span class = 'output-text'>for loop</span>")
+	for (var i = 0; i < 5; i++) {
+    document.write("<span class = 'output-text'>Iteration " + i+"</span><br>");
+	}
+
+	document.write("<br>");
+	document.write("<span class = 'output-text'>while loop</span>")
+	var count = 0;
+	while (count < 3) {
+    document.write("<span class = 'output-text'>Count: " + count+"</span><br>");
+    count++;
+	}
+
+	document.write("<br>");
+
+
+	var fruits = ["Apple", "Banana", "Orange"];
+	document.write("<span class = 'output-text'>arreay: "+fruits+"</span>");
+	document.write("<br>");
+	for (var i = 0; i < 3; i++) {
+    document.write("<span class = 'output-text'>"+fruits[i]+"</span><br>");
+	}
+
+	document.write("<br>");
+
+
+	</script>
+	<button onclick="alert('Button clicked!')">Click me</button>
+
+</body>
+</html>

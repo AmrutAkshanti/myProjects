@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+
+	<h1 id="a"></h1>
+	<h1 id="b"></h1>
+	<h1 id="c"></h1>
+	<h1 id="d"></h1>
+	<h1 id="e"></h1>
+	<h1 id="f"></h1>
+
+	<script type="text/javascript">
+		let a1 = 10;
+		let a2 = 5;
+
+		function add(a1,a2)
+		{
+			return a1+a2;
+
+		}
+		function sub(a1,a2)
+		{
+			return a1-a2;
+		}
+		function div(a1,a2)
+		{
+			return a1/a2;
+		}
+		function mul(a1,a2)
+		{
+			return a1*a2;
+		}
+		function mod(a1,a2)
+		{
+			return a1%a2;
+		}
+		function fact(a1)
+		{
+			if (a1==0 || a1==1){
+				return 1;
+			}
+			else{
+				return a1*fact(a1-1);
+			}
+		}
+
+		document.getElementById("a").innerHTML = "addition: " + add(a1,a2);
+		document.getElementById("b").innerHTML = "subtraction: " + sub(a1,a2);
+		document.getElementById("c").innerHTML = "division: " + div(a1,a2);
+		document.getElementById("d").innerHTML = "multiplication: " + mul(a1,a2);
+		document.getElementById("e").innerHTML = "modulus: " + mod(a1,a2);
+		document.getElementById("f").innerHTML = "factorial: " + fact(a2);
+
+
+	</script>
+
+</body>
+</html>
