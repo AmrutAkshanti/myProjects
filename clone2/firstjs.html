@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>First JS file</title>
+	<style type="text/css">
+		#a{
+			color: red;
+		}
+		#b{
+			color: blue;
+		}
+		#c{
+			color: limegreen;
+		}
+		#d{
+			color: hotpink;
+		}
+		#e{
+			color: grey;
+		}
+		#f{
+			color: greenyellow;
+		}
+		#g{
+			color: mediumaquamarine;
+		}
+		#i{
+			color: burlywood;
+		}
+	</style>
+</head>
+<body>
+
+	<h1 id="a">Click to display time</h1>
+	<button onclick="document.getElementById('a').innerHTML = Date()">Click me</button>
+
+	<h1 id="b">Click to dispay year</h1>
+	<button onclick="document.getElementById('b').innerHTML = new Date().getFullYear()">click me</button>
+
+	<h1 id="c">Click to display month</h1>
+	<button onclick="document.getElementById('c').innerHTML = new Date().getMonth()">click me</button>
+
+	<h1 id="d">Click to display date</h1>
+	<button onclick="document.getElementById('d').innerHTML = new Date().getDate()">click me</button>
+
+	<h1 id="e">Click to display minutes</h1>
+	<button onclick="document.getElementById('e').innerHTML = new Date().getHours()">click me</button>
+
+	<h1 id="f">Click to display minutes</h1>
+	<button onclick="document.getElementById('f').innerHTML = new Date().getSeconds()">click me</button>
+
+	<h1 id="g">Click to display random number</h1>
+	<button onclick="document.getElementById('g').innerHTML = Math.random()">click me</button>
+
+	<h1 id="h">Click to display minutes</h1>
+	<button onclick="document.getElementById('h').innerHTML = new Date().getSeconds()">click me</button>
+
+	<h1 id="i">Click to display milliseconds since Jan1,1970</h1>
+	<button onclick="document.getElementById('i').innerHTML = new Date().getTime()">click me</button>
+
+</body>
+</html>													

@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style type="text/css">
+      body,html{
+        font-family: Inter, Helvetica, Arial, system-ui, sans-seri;
+      }
+    </style>
+    <style>
+      .card {
+    border: none;
+  }
+  .rounded-img {
+    border-radius: 50%; /* This creates a round shape */
+    width: 75px; /* Adjust the width and height as needed */
+    height: 75px;
+    object-fit: cover; /* Ensure the image covers the entire container */
+  }
+  .number-circle {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border: 2px solid #B91C1C;
+    border-radius: 50%;
+    color: #B91C1C;
+    font-size: 18px;
+    margin-right: 10px; /* Adjust spacing as needed */
+  }
+  .wave-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin-top: 100px; /* Adjust the distance between the card and the wave */
+  }
+
+  .wave {
+    width: 100%;
+    height: 80px; /* Adjust the height of the wave */
+    background-image: linear-gradient(to right, red 25%, transparent 25%, transparent 50%, red 50%, red 75%, transparent 75%, transparent);
+    background-size: 80px 100%; /* Adjust the width and frequency of the waves */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+  }
+</style>
+  </head>
+  <body>
+    
+    <!--Navbar-->
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <i class="fa-solid fa-bars btn btn-light fs-2 me-2"  data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample"></i>
+    <a class="navbar-brand" href="#"><h1>Entreprneur</h1></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+       
+          <a class="btn btn-light " aria-current="page" href="#">Sign In</a>
+          <button type="button" class="btn btn-warning">Subscribe</button>
+          <i class="fa-solid fa-magnifying-glass btn btn-light fs-4 me-1"></i>
+      </form>
+    </div>
+  </div>
+</nav>
+
+    <!--Navbar End-->
+
+<div class="alert alert-primary" role="alert" style="text-align: center;">
+      Stream Entreprneur Tv for free
+  </div>
+
+
+  <!--grid-->
+
+  <div class="container text-center">
+  <div class="row">
+    <div class="col">
+      <!--card-->
+      <div class="card" style="width: 18rem;">
+  <img src="1.webp" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">After Going to Prison, He Worked Hard to Build a Career. Then This Happened, and He Discovered a Liberating</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+<br>
+<br>
+<div class="card" style="width: 18rem;">
+  <img src="3.webp" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+
+      <!--card end-->
+    </div>
+    <div class="col">
+      <!--card-->
+      <div class="card" style="width: 28rem;">
+  <img src="2.webp" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Scince and Technology</h5>
+    <h5 id="" class="tracking-tight font-extrabold text-2xl lg:text-3xl pb-2 lg:pb-4 lg:pt-1">
+    <a href="/science-technology/exploring-how-virtual-reality-is-changing-startups/473666">
+                  Exploring How Virtual Reality is Changing Startups
+    </a>
+    </h5>
+    <p class="card-text">Virtual reality's immersive environment is where startup marketing is headed, and early adopters will be the ones who profit.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+
+      <!--card end-->
+    </div>
+
+    <div class="col">
+
+      <!--card begins-->
+
+      <a href="" style="color: black;"><h1>Most Read</h1></a><br>
+      <p id="currentDate" class="mb-6 text-lg text-gray-600 block xl:text-xl xl:mb-8">For May 5, 2024</p>
+      <br>
+      <div class="card">
+  <div class="card-body">
+    <div class="number-circle">1</div>
+    <a href="" style="color:black">63 Small Business Ideas to Start in 2024</a><br>
+  </div>
+</div><br>
+<div class="card">
+  <div class="card-body">
+    <div class="number-circle">2</div>
+    <a href="" style="color:black">Exploring How Virtual Reality is Changing Startups</a>
+  </div>
+</div><br>
+<div class="card">
+  <div class="card-body">
+    <div class="number-circle">3</div>
+    <a href="" style="color:black">It's the End of the Entrepreneurial Era As We Know It</a>
+  </div>
+</div><br>
+<div class="card">
+  <div class="card-body">
+    <div class="number-circle">4</div>
+    <a href="" style="color:black">12 Books That Self-Made Millionaires Swear By</a>
+  </div>
+</div><br>
+<div class="card">
+  <div class="card-body">
+    <div class="number-circle">5</div>
+    <a href="" style="color:black">'The Employment Situation' Report for April Shows Employers Are Taking Hiring Down a Notch, Employee Wage Growth Slowing</a>
+  </div>
+</div><br>
+<div class="card">
+  <div class="card-body">
+    <div class="number-circle">6</div>
+    <a href="" style="color:black">'They're Scared': PNC Arena Bans New York Residents From Purchasing Tickets Ahead of Rangers, Hurricanes NHL Playoff Matchup</a>
+  </div>
+</div><br>
+<div class="card">
+  <div class="card-body">
+    <div class="number-circle">7</div>
+    <a href="" style="color:black">'Marketing Happy Hour' Podcast Hosts Share the Best Way to Connect With Consumers: 'Think of Social Media Like a First Date'</a>
+  </div>
+</div><br>
+    </div>
+  </div>
+</div>
+
+  <!--grid ends-->
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  
+  <hr>
+  <a href="" style="color: black;"><h1 >Latest</h1></a>
+  <!--grid 2-->
+  <div class="container text-center">
+  <div class="row">
+    <div class="col">
+      <div class="card" style="width: 25rem">
+  <div class="card-body d-flex align-items-top">
+    <img src="https://assets.entrepreneur.com/content/3x2/2000/1714767372-clinton-sparks-nolan-bushnell-innovation-0524-g852044984.jpg" data-src="https://assets.entrepreneur.com/content/3x2/2000/1714767372-clinton-sparks-nolan-bushnell-innovation-0524-g852044984.jpg" class="rounded-img" width="75" mr-3 height="100" alt="">
+    <div>
+      <h5 id="latest0" class="tracking-tight leading-6 lg:leading-7 font-semibold text-gray-800 hover:underline pb-2 text-lg lg:text-xl">
+    <a href="" style="color: black;" >'The Employment Situation' Report for April Shows Employers Are Taking Hiring Down a Notch, Employee Wage Growth Slowing</a>
+  </h5>
+    </div>  
+  </div>
+</div>
+<div class="card">
+  <div class="card-body d-flex align-items-top">
+    <img src="https://assets.entrepreneur.com/content/3x2/2000/1714767005-clinton-sparks-ti-entrepreneur-success-0524-g2047804985.jpg" data-src="https://assets.entrepreneur.com/content/3x2/2000/1714767005-clinton-sparks-ti-entrepreneur-success-0524-g2047804985.jpg" class="rounded-img" width="75" height="100" alt="">
+     <h5 id="latest0" class="tracking-tight leading-6 lg:leading-7 font-semibold text-gray-800 hover:underline pb-2 text-lg lg:text-xl">
+    <a href="" style="color: black">'They're Scared': PNC Arena Bans New York Residents From Purchasing Tickets Ahead of Rangers, Hurricanes NHL Playoff Matchup</a>
+  </h5>
+  </div>
+</div>
+<div class="card">
+  <div class="card-body d-flex align-items-top">
+    <img src="https://assets.entrepreneur.com/content/3x2/2000/1714764952-Employment-application-GettyImages-154411189.jpg" data-src="https://assets.entrepreneur.com/content/3x2/2000/1714764952-Employment-application-GettyImages-154411189.jpg" class="rounded-img" width="75" height="100" alt="">
+    <h5 id="latest0" class="tracking-tight leading-6 lg:leading-7 font-semibold text-gray-800 hover:underline pb-2 text-lg lg:text-xl">
+    <a href="" style="color: black;"> Man Wins Battle With Cartier After a Typo Let Him Purchase $14,000 Earrings for Just $14</a>
+  </h5>
+  </div>
+</div>
+    </div>
+    <div class="col">
+      <div class="card" style="width: 25rem;">
+  <img src="4.webp" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Green Entreprnuer</h5>
+    <p class="card-text">A Deer Invasion in Hawaii Has Turned Into an Environmental Crisis—And a Sustainable Business Opportunity</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+    </div>
+    <div class="col">
+      <div class="col">
+      <div class="card" style="width: 25rem;">
+  <img src="5.webp" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Green Entreprnuer</h5>
+    <p class="card-text">Spotify Removes a Key Feature From Its Free Music Listening Tier</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+    </div>
+    </div>
+  </div>
+</div>
+<br>
+  <!--grind2 ends-->
+
+
+
+  <!--grid 3-->
+
+
+  <div class="container text-center">
+  <div class="row row-cols-2">
+    <div class="col">
+      <div class="card" style="width: 35rem; ">
+  <img class="ob-rec-image ob-show" loading="lazy" aria-hidden="true" src="https://images.outbrainimg.com/transform/v3/eyJpdSI6IjViMzA4ODljZWVjMzQ0OGY5MDU2ODA1YmI2YWIyMDdjYTQ4YjhhYmJkZTVmMzQzYjgwNmY5NDZmMDdlYzE3MjQiLCJ3Ijo0MDAsImgiOjI1MCwiZCI6Mi4wLCJjcyI6MCwiZiI6NH0.webp" onload="this.className+=' ob-show'">
+    <div class="card-body" style="display: inline-block; vertical-align: top; width: calc(100% - 160px); padding-left: 10px;">
+      
+      <p class="card-text">12 Questions to Ask Yourself to Set Your Business Goals" title="12 Questions to Ask Yourself to Set Your Business Goals</p>
+      <a href="#" class="btn btn-warning">Warning</a>
+    </div>
+  </div>
+    </div>
+    <div class="col">
+      <div class="card" style="width: 35rem; ">
+    
+     <img class="ob-rec-image ob-show" loading="lazy" aria-hidden="true" src="https://images.outbrainimg.com/transform/v3/eyJpdSI6ImMzNWQ5YzQxMDUwMzI1MDlmZDkwMzdlMWZhNDcwMGNlOTZmMTYxYzdkNGJhZWY4NTQ0NWNiMDJhNjhhMDBmMDEiLCJ3Ijo0MDAsImgiOjI1MCwiZCI6Mi4wLCJjcyI6MCwiZiI6NH0.webp" onload="this.className+=' ob-show'" >
+    <div class="card-body" style="display: inline-block; vertical-align: top; width: calc(100% - 160px); padding-left: 10px;">     
+      <p class="card-text">How to Formulate the Perfect 10 Minute Elevator Pitch</p>
+       <a href="#" class="btn btn-warning">Warning</a>
+    </div>
+  </div>
+    </div>
+  </div>
+
+  <!--wiggle line-->
+  <div>
+    <svg class="600  mb-6 lg:mb-12 md:block lg:hidden" data-name="Wavey Line" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 600 19" aria-hidden="true">
+  <title>Wavy Line</title>
+  <defs>
+    <clipPath>
+      <rect data-name="Rectangle 6601" width="1641" height="19" transform="translate(0 0.216)" fill="#fa2d2d" stroke="#fa2d2d" stroke-width="1"></rect>
+    </clipPath>
+  </defs>
+  <g data-name="Group 14527" transform="translate(0 -0.216)">
+    <path data-name="Path 18152" d="M1620.982,18.971c-5.106,0-7.686-4.658-10.182-9.164-2.537-4.579-4.933-8.9-9.837-8.9s-7.3,4.324-9.835,8.9c-2.5,4.506-5.076,9.164-10.18,9.164s-7.685-4.658-10.181-9.164c-2.536-4.579-4.932-8.9-9.835-8.9s-7.3,4.324-9.835,8.9c-2.495,4.506-5.075,9.164-10.18,9.164s-7.685-4.659-10.181-9.165C1528.2,5.228,1525.805.9,1520.9.9s-7.3,4.324-9.833,8.9c-2.5,4.506-5.075,9.164-10.179,9.164s-7.685-4.658-10.18-9.164c-2.536-4.579-4.932-8.9-9.835-8.9s-7.3,4.324-9.834,8.9c-2.5,4.506-5.076,9.165-10.18,9.165s-7.685-4.658-10.18-9.164c-2.536-4.579-4.932-8.9-9.835-8.9s-7.3,4.324-9.834,8.9c-2.495,4.506-5.075,9.164-10.18,9.164s-7.685-4.658-10.18-9.164c-2.536-4.579-4.932-8.9-9.834-8.9s-7.3,4.324-9.833,8.9c-2.5,4.506-5.075,9.165-10.18,9.165s-7.685-4.658-10.18-9.164c-2.536-4.579-4.932-8.9-9.834-8.9s-7.3,4.324-9.833,8.9c-2.5,4.506-5.075,9.164-10.18,9.164s-7.685-4.658-10.18-9.164c-2.536-4.579-4.932-8.9-9.835-8.9s-7.3,4.324-9.833,8.9c-2.495,4.506-5.075,9.165-10.179,9.165s-7.684-4.659-10.179-9.165c-2.536-4.578-4.931-8.9-9.833-8.9s-7.3,4.324-9.832,8.9c-2.5,4.506-5.075,9.165-10.179,9.165s-7.683-4.658-10.178-9.164c-2.536-4.579-4.931-8.9-9.833-8.9s-7.3,4.324-9.832,8.9c-2.5,4.506-5.075,9.165-10.179,9.165s-7.685-4.658-10.179-9.164c-2.536-4.579-4.932-8.9-9.834-8.9s-7.3,4.324-9.833,8.9c-2.5,4.506-5.075,9.164-10.179,9.164S1173,14.312,1170.5,9.806c-2.536-4.578-4.932-8.9-9.833-8.9s-7.3,4.324-9.834,8.9c-2.494,4.506-5.075,9.165-10.179,9.165s-7.684-4.658-10.179-9.164c-2.536-4.579-4.932-8.9-9.833-8.9s-7.3,4.324-9.834,8.9c-2.5,4.506-5.075,9.164-10.179,9.164s-7.684-4.658-10.18-9.164c-2.536-4.579-4.932-8.9-9.834-8.9s-7.3,4.324-9.833,8.9c-2.495,4.506-5.075,9.165-10.18,9.165s-7.685-4.658-10.179-9.164c-2.536-4.579-4.931-8.9-9.834-8.9s-7.3,4.324-9.834,8.9c-2.5,4.506-5.075,9.164-10.18,9.164s-7.684-4.658-10.179-9.164c-2.536-4.579-4.931-8.9-9.834-8.9s-7.3,4.324-9.833,8.9c-2.5,4.506-5.075,9.164-10.179,9.164s-7.684-4.658-10.178-9.164C967.836,5.228,965.442.9,960.54.9s-7.3,4.324-9.833,8.9c-2.495,4.506-5.075,9.165-10.179,9.165s-7.685-4.658-10.18-9.164c-2.536-4.579-4.931-8.9-9.834-8.9s-7.3,4.324-9.834,8.9c-2.495,4.506-5.075,9.164-10.178,9.164s-7.684-4.659-10.18-9.165C887.787,5.228,885.391.9,880.49.9s-7.3,4.324-9.834,8.9c-2.495,4.506-5.075,9.165-10.179,9.165s-7.684-4.658-10.179-9.164c-2.535-4.579-4.931-8.9-9.832-8.9s-7.3,4.324-9.833,8.9c-2.5,4.506-5.075,9.165-10.179,9.165s-7.684-4.658-10.179-9.164c-2.536-4.579-4.931-8.9-9.833-8.9s-7.3,4.324-9.833,8.9c-2.5,4.506-5.074,9.164-10.179,9.164s-7.684-4.658-10.179-9.164c-2.536-4.579-4.931-8.9-9.833-8.9s-7.3,4.324-9.832,8.9c-2.5,4.506-5.075,9.164-10.179,9.164s-7.684-4.658-10.179-9.164C727.69,5.228,725.3.9,720.393.9s-7.3,4.324-9.832,8.9c-2.5,4.506-5.074,9.165-10.179,9.165S692.7,14.313,690.2,9.807C687.667,5.228,685.272.9,680.37.9s-7.3,4.324-9.832,8.9c-2.5,4.506-5.075,9.164-10.179,9.164s-7.685-4.659-10.179-9.165c-2.536-4.578-4.931-8.9-9.834-8.9s-7.3,4.324-9.832,8.9c-2.5,4.506-5.074,9.164-10.178,9.164s-7.684-4.658-10.178-9.164c-2.536-4.579-4.931-8.9-9.834-8.9s-7.3,4.324-9.832,8.9c-2.5,4.506-5.074,9.165-10.179,9.165s-7.684-4.658-10.178-9.164C567.6,5.228,565.2.9,560.3.9s-7.3,4.324-9.833,8.9c-2.5,4.506-5.075,9.164-10.18,9.164s-7.684-4.659-10.178-9.165c-2.536-4.578-4.93-8.9-9.832-8.9s-7.3,4.324-9.833,8.9c-2.5,4.506-5.074,9.164-10.178,9.164s-7.684-4.658-10.178-9.164c-2.536-4.579-4.931-8.9-9.833-8.9s-7.3,4.324-9.832,8.9c-2.5,4.506-5.074,9.165-10.178,9.165s-7.683-4.658-10.178-9.164c-2.536-4.579-4.931-8.9-9.833-8.9s-7.3,4.324-9.832,8.9c-2.5,4.506-5.075,9.165-10.179,9.165s-7.683-4.658-10.178-9.164c-2.535-4.579-4.93-8.9-9.832-8.9s-7.3,4.324-9.832,8.9c-2.5,4.506-5.075,9.164-10.179,9.164s-7.684-4.658-10.179-9.164C367.49,5.228,365.095.9,360.193.9s-7.3,4.324-9.832,8.9c-2.495,4.506-5.074,9.164-10.178,9.164s-7.683-4.658-10.178-9.164C327.47,5.228,325.075.9,320.173.9s-7.3,4.324-9.833,8.9c-2.5,4.506-5.075,9.165-10.179,9.165s-7.683-4.659-10.178-9.165c-2.535-4.578-4.93-8.9-9.832-8.9s-7.3,4.324-9.831,8.9c-2.495,4.506-5.074,9.164-10.178,9.164s-7.683-4.658-10.178-9.164c-2.535-4.579-4.931-8.9-9.832-8.9s-7.3,4.324-9.833,8.9c-2.5,4.506-5.075,9.164-10.179,9.164s-7.683-4.658-10.178-9.164c-2.535-4.579-4.93-8.9-9.831-8.9s-7.3,4.324-9.831,8.9c-2.495,4.506-5.074,9.165-10.178,9.165s-7.683-4.658-10.178-9.164c-2.535-4.579-4.93-8.9-9.832-8.9s-7.3,4.324-9.833,8.9c-2.495,4.506-5.075,9.164-10.178,9.164S132.4,14.313,129.9,9.807C127.366,5.228,124.971.9,120.07.9s-7.3,4.324-9.833,8.9c-2.5,4.506-5.075,9.164-10.179,9.164s-7.684-4.658-10.179-9.164C87.343,5.228,84.948.9,80.046.9s-7.3,4.324-9.833,8.9c-2.5,4.506-5.075,9.164-10.179,9.164s-7.683-4.658-10.178-9.164C47.32,5.228,44.925.9,40.023.9s-7.3,4.324-9.833,8.9c-2.5,4.506-5.075,9.164-10.179,9.164S12.328,14.313,9.833,9.807C7.3,5.228,4.9.9,0,.9V0C5.1,0,7.684,4.658,10.179,9.164c2.535,4.579,4.931,8.9,9.833,8.9s7.3-4.324,9.833-8.9C32.339,4.658,34.919,0,40.023,0S47.707,4.659,50.2,9.165c2.535,4.578,4.931,8.9,9.832,8.9s7.3-4.324,9.833-8.9C72.362,4.658,74.942,0,80.046,0S87.73,4.659,90.225,9.165c2.536,4.578,4.931,8.9,9.833,8.9s7.3-4.324,9.833-8.9C112.385,4.658,114.965,0,120.07,0s7.684,4.658,10.179,9.164c2.535,4.579,4.931,8.9,9.833,8.9s7.3-4.324,9.832-8.9C152.408,4.659,154.989,0,160.093,0s7.683,4.658,10.178,9.164c2.535,4.579,4.93,8.9,9.832,8.9s7.3-4.324,9.832-8.9C192.429,4.658,195.008,0,200.112,0s7.683,4.658,10.177,9.164c2.535,4.579,4.93,8.9,9.832,8.9s7.3-4.324,9.833-8.9C232.449,4.658,235.028,0,240.132,0s7.683,4.659,10.178,9.165c2.535,4.578,4.93,8.9,9.832,8.9s7.3-4.324,9.832-8.9C272.469,4.658,275.048,0,280.151,0s7.683,4.658,10.178,9.164c2.535,4.579,4.93,8.9,9.832,8.9s7.3-4.324,9.833-8.9C312.49,4.658,315.07,0,320.173,0s7.683,4.659,10.178,9.165c2.535,4.578,4.93,8.9,9.832,8.9s7.3-4.324,9.832-8.9C352.51,4.658,355.09,0,360.193,0s7.684,4.658,10.179,9.164c2.536,4.579,4.931,8.9,9.833,8.9s7.3-4.324,9.832-8.9C392.532,4.658,395.111,0,400.215,0s7.683,4.658,10.178,9.164c2.535,4.579,4.931,8.9,9.832,8.9s7.3-4.324,9.833-8.9C432.552,4.658,435.132,0,440.236,0s7.684,4.659,10.179,9.165c2.535,4.578,4.931,8.9,9.832,8.9s7.3-4.324,9.832-8.9C472.573,4.658,475.154,0,480.257,0s7.684,4.658,10.179,9.164c2.535,4.579,4.931,8.9,9.833,8.9s7.3-4.324,9.832-8.9C512.6,4.659,515.176,0,520.279,0s7.683,4.658,10.178,9.164c2.535,4.579,4.931,8.9,9.832,8.9s7.3-4.324,9.834-8.9C552.618,4.658,555.2,0,560.3,0s7.683,4.658,10.178,9.164c2.535,4.579,4.931,8.9,9.832,8.9s7.3-4.324,9.833-8.9C592.64,4.658,595.22,0,600.323,0s7.684,4.659,10.179,9.165c2.535,4.578,4.931,8.9,9.833,8.9s7.3-4.324,9.832-8.9C632.662,4.658,635.242,0,640.346,0s7.684,4.658,10.179,9.164c2.536,4.579,4.931,8.9,9.834,8.9s7.3-4.324,9.833-8.9C672.686,4.658,675.266,0,680.37,0s7.684,4.658,10.179,9.164c2.536,4.579,4.931,8.9,9.833,8.9s7.3-4.324,9.833-8.9C712.71,4.658,715.29,0,720.393,0s7.684,4.658,10.18,9.164c2.535,4.579,4.931,8.9,9.833,8.9s7.3-4.324,9.833-8.9C752.733,4.658,755.313,0,760.417,0S768.1,4.658,770.6,9.164c2.536,4.579,4.931,8.9,9.833,8.9s7.3-4.324,9.833-8.9C792.757,4.658,795.337,0,800.441,0s7.684,4.658,10.179,9.164c2.536,4.579,4.931,8.9,9.833,8.9s7.3-4.324,9.833-8.9C832.782,4.658,835.362,0,840.466,0s7.684,4.658,10.178,9.164c2.536,4.579,4.931,8.9,9.833,8.9s7.3-4.324,9.834-8.9C872.806,4.658,875.386,0,880.49,0s7.684,4.658,10.178,9.164c2.536,4.579,4.931,8.9,9.834,8.9s7.3-4.324,9.832-8.9C912.83,4.659,915.41,0,920.514,0s7.685,4.658,10.18,9.164c2.536,4.579,4.931,8.9,9.834,8.9s7.3-4.324,9.833-8.9C952.856,4.658,955.436,0,960.54,0s7.684,4.659,10.179,9.165c2.536,4.578,4.931,8.9,9.833,8.9s7.3-4.324,9.833-8.9C992.879,4.658,995.46,0,1000.564,0s7.684,4.658,10.179,9.164c2.536,4.579,4.931,8.9,9.833,8.9s7.3-4.324,9.834-8.9C1032.9,4.658,1035.485,0,1040.59,0s7.685,4.658,10.18,9.164c2.536,4.579,4.932,8.9,9.834,8.9s7.3-4.324,9.834-8.9C1072.932,4.658,1075.512,0,1080.616,0s7.685,4.658,10.18,9.164c2.536,4.579,4.932,8.9,9.834,8.9s7.3-4.324,9.833-8.9c2.5-4.506,5.075-9.165,10.18-9.165s7.684,4.658,10.179,9.164c2.536,4.579,4.931,8.9,9.833,8.9s7.3-4.324,9.834-8.9c2.5-4.506,5.075-9.164,10.179-9.164s7.685,4.658,10.179,9.164c2.536,4.579,4.932,8.9,9.835,8.9s7.3-4.324,9.833-8.9C1193.01,4.658,1195.59,0,1200.695,0s7.684,4.659,10.18,9.165c2.536,4.578,4.931,8.9,9.833,8.9s7.3-4.324,9.833-8.9C1233.036,4.658,1235.616,0,1240.719,0s7.684,4.659,10.179,9.165c2.536,4.578,4.931,8.9,9.832,8.9s7.3-4.324,9.833-8.9C1273.058,4.658,1275.638,0,1280.741,0s7.684,4.658,10.179,9.164c2.536,4.579,4.931,8.9,9.833,8.9s7.3-4.324,9.834-8.9C1313.082,4.658,1315.662,0,1320.765,0s7.685,4.659,10.181,9.165c2.536,4.578,4.931,8.9,9.834,8.9s7.3-4.324,9.834-8.9C1353.109,4.658,1355.689,0,1360.793,0s7.684,4.658,10.18,9.164c2.536,4.579,4.932,8.9,9.834,8.9s7.3-4.324,9.833-8.9c2.5-4.506,5.075-9.164,10.179-9.164S1408.5,4.658,1411,9.164c2.536,4.579,4.932,8.9,9.834,8.9s7.3-4.324,9.834-8.9c2.495-4.506,5.075-9.164,10.18-9.164s7.685,4.659,10.18,9.165c2.536,4.578,4.932,8.9,9.835,8.9s7.3-4.324,9.835-8.9c2.495-4.506,5.075-9.164,10.18-9.164s7.685,4.659,10.181,9.165c2.536,4.578,4.932,8.9,9.834,8.9s7.3-4.324,9.833-8.9C1513.219,4.659,1515.8,0,1520.9,0s7.685,4.658,10.18,9.164c2.536,4.579,4.932,8.9,9.835,8.9s7.3-4.324,9.834-8.9c2.5-4.506,5.075-9.165,10.181-9.165s7.686,4.659,10.181,9.165c2.536,4.578,4.931,8.9,9.835,8.9s7.3-4.324,9.835-8.9c2.495-4.506,5.076-9.164,10.18-9.164s7.687,4.659,10.182,9.165c2.536,4.578,4.932,8.9,9.836,8.9s7.3-4.324,9.836-8.9C1633.314,4.658,1635.894,0,1641,0V.9c-4.9,0-7.3,4.324-9.837,8.9-2.5,4.506-5.076,9.164-10.182,9.164" transform="translate(0 0.245)" fill="#fa2d2d" stroke="#fa2d2d" stroke-width="1"></path>
+  </g>
+</svg>
+</div>
+
+  <!--wiggle line end-->
+
+  <!--grid3 ends-->
+
+  <!--offcanvas-->
+
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <h2 class="offcanvas-title" id="offcanvasExampleLabel">Entreprnuer</h2>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <i class="fa-solid fa-magnifying-glass btn btn-light fs-4 me-1"></i>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <hr>
+  <div class="offcanvas-body">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <button type="button" class="btn btn-warning fs-3">Subscribe</button><br>
+    <div>
+      <br>
+      <a class="mt-3" href="" style="color: black;"><h5>Starting a business</h5></a><br>
+      <a class="mt-3" href="" style="color: black;"><h5>Growing a Business</h5></a><br>
+      <a class="mt-3" href="" style="color: black;"><h5>Leadership</h5></a><br>
+      <a class="mt-3" href="" style="color: black;"><h5>Small business Guide</h5></a><br>
+      <a class="mt-3" href="" style="color: black;"><h5>business News</h5></a><br>
+      <a class="mt-3" href="" style="color: black;"><h5>Science and technology</h5></a><br>
+      <a class="mt-3" href="" style="color: black;"><h5>Money & Finance</h5></a><br>
+      <a class="mt-3" href="" style="color: black;"><h5>Living</h5></a><br>
+      <a class="mt-3" href="" style="color: black;"><h5>Franchise</h5></a><br>
+    </div>
+    </div>
+  </div>
+</div>
+
+  <!--offcanvas end-->
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+  </body>
+</html>
